@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>川开电气设计院资源拓展专项报告</title>
+    <style>
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .report-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1a5276;
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2874a6;
+            font-size: 22px;
+            margin-top: 30px;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+        }
+        h3 {
+            color: #3498db;
+            font-size: 18px;
+            margin-top: 25px;
+        }
+        .data-section {
+            background-color: #f2f9ff;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border: 1px solid #d6eaf8;
+        }
+        .chart-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+        .chart {
+            width: 45%;
+            min-width: 300px;
+            margin: 10px;
+        }
+        .footer {
+            text-align: right;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #7f8c8d;
+            border-top: 1px dashed #bdc3c7;
+            padding-top: 15px;
+        }
+        .highlight {
+            background-color: #fffde7;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: { useMaxWidth: false }
+        });
+    </script>
+</head>
+<body>
+    <div class="report-container">
+        <h1>川开电气设计院资源拓展专项报告</h1>
+        
+        <div class="data-section">
+            <h2>核心数据概览</h2>
+            <div class="chart-container">
+                <div class="chart">
+                    <div class="mermaid">
+                        pie
+                            title 设计院资源分布占比
+                            "西南建筑设计院" : 28
+                            "四川省建筑设计院" : 25
+                            "中电建四川咨询院" : 18
+                            "中国建筑西南院" : 15
+                            "其他设计院" : 14
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>战略合作推进情况</h2>
+        
+        <h3>头部设计院深度合作</h3>
+        <ul>
+            <li><strong>西南建筑设计院BIM中心</strong>：建立常态化技术交流机制，完成3轮产品方案论证</li>
+            <li><strong>四川省院重点所</strong>：覆盖一、二、四、六所电气总工，形成4项标准化上图方案</li>
+            <li><strong>中电建四川咨询院</strong>：储能中心专项对接，植入智能化产品方案2套</li>
+        </ul>
+
+        <div class="chart-container">
+            <div class="chart">
+                <div class="mermaid">
+                    gantt
+                        title 重点项目推进时间轴
+                        dateFormat  YYYY-MM-DD
+                        section 战略合作
+                        西南院BIM中心对接      :done, 2025-06-05, 7d
+                        省院标准化方案制定    :done, 2025-06-12, 10d
+                        中电建储能产品植入    :active, 2025-06-25, 14d
+                </div>
+            </div>
+        </div>
+
+        <h2>关键成果展示</h2>
+        
+        <h3>资源网络构建</h3>
+        <ul>
+            <li><strong>覆盖层级</strong>：7家省级甲级设计院核心决策层</li>
+            <li><strong>触点密度</strong>：平均每周3.2次高层技术交流</li>
+            <li><strong>项目渗透</strong>：在途跟踪重点设计项目23个，涉及电网投资8.7亿元</li>
+        </ul>
+
+        <h3>45周年活动赋能</h3>
+        <ul>
+            <li><strong>设计院邀约</strong>：确认参会37家，覆盖西南地区92%头部机构</li>
+            <li><strong>专项接待方案</strong>：按"电网/工建/新能源"三大领域定制化接待流程</li>
+        </ul>
+
+        <h2>下阶段攻坚重点</h2>
+        
+        <h3>技术壁垒突破</h3>
+        <ol>
+            <li><strong>轨道交通领域</strong>：锁定铁二院供变电所海外项目技术标准</li>
+            <li><strong>新能源配套</strong>：与电力设计院建立联合技术攻关小组</li>
+            <li><strong>智能配电</strong>：在省院六所试点数字孪生设计方案</li>
+        </ol>
+
+        <div class="chart-container">
+            <div class="chart">
+                <div class="mermaid">
+                    graph TD
+                        A[设计院资源] --> B{项目阶段}
+                        B -->|前期咨询| C[产品标准植入]
+                        B -->|施工图| D[技术规范锁定]
+                        B -->|EPC总包| E[联合投标机制]
+                </div>
+            </div>
+        </div>
+
+        <h2>战略价值评估</h2>
+        
+        <h3>市场前置优势</h3>
+        <ul>
+            <li><strong>标准制定参与度</strong>提升40%，影响8个省级重点项目的设备选型</li>
+            <li><strong>设计转化率</strong>达行业平均水平的2.3倍，项目周期缩短15-20个工作日</li>
+        </ul>
+
+        <h3>风险预警</h3>
+        <ul>
+            <li>十一科技工总院等3家机构需加强技术黏性</li>
+            <li>化工设计院等细分领域渗透不足，存在市场空白</li>
+        </ul>
+
+        <div class="footer">
+            <p>报告编制：战略资源中心</p>
+            <p>数据周期：2025.06.03-2025.07.11</p>
+            <p>版本号：V2.1-战略评估版</p>
+            <p>注：实际演示时可配合动态数据看板，实时更新设计院合作项目状态及转化指标</p>
+        </div>
+    </div>
+</body>
+</html>
